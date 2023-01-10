@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 
 * {
     margin: 0px;
@@ -8,23 +15,39 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
-    color: white;
+    color: rgb(232, 242, 167);
     text-align: center;
+    background-image:url(imagens/capa-cordel.jpg);
+   background-size: cover;
+   position:relative;
+    padding-bottom: 50px;
 }
 
 header > h1 {
     padding: 50px;
     font-variant: small-caps;
+    font-family:var(--fonte2);
+    font-size: 10vw;
+    
 }
 
-header > p {
-    padding-bottom: 50px;
+header >div > p {
+    background-color: rgba(14, 14, 14, 0.314);
+    padding: 10px ;
+    border-radius: 20px;
+    size: 10vw 10vh;
+    
 }
 
+div {
+    position: absolute;
+    right: 40%;
+    display: inline-block;
+}
 a {
     color: white;
     text-decoration: none;
@@ -41,22 +64,45 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family:var(--fonte3);
+    font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;
+    background-image: url(imagens/papel-cordel.jpg);
 }
 
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.552);
+    background-attachment: fixed;
+}
 
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
 }
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
 section.imagem > p {
-    background-color: black;
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.500);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
+
+
 
 footer {
     background-color: black;
