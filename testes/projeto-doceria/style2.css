@@ -1,10 +1,9 @@
+@charset "UTF-8";
 
-
-
-* { 
+* {
     padding: 0;
     margin: 0;
-} 
+}
 
 :root {
     --cor0: #D077D9;
@@ -23,31 +22,52 @@
 }
 
 body {
-    background-image: linear-gradient( var(--cor0), var(--cor1), var(--cor2), var(--cor3));
+    background-image: linear-gradient( rgb(248, 138, 98), rgb(62, 32, 22));
+    background-repeat: no-repeat;
     height: 100%vh;
+    
 }
 
 header {
-    background-color: rgb(212, 143, 212);
+    background-image: url(imagens/pexels-paloma-clarice-9285194.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    box-shadow: 1px 1px 4px 1px black;
+    padding: 10px;
+    
+    text-align: center;
+    width: 100%vw;
+    
+}
 
+header > h1 { 
+    font-size: 4em;
+    font-family: var(--font1);
+    color: var(--cor1);
+}
+
+header > p {
+    font-size: 3em;
+    font-family: var(--font0);
+    color: var(--cor2);
 }
 
 div.container { 
-    background-image: url(imagens/brigadeiro2-Ge.jpg);
     position: relative;
     width: 80vw;
     height: 400px;
     border: 1px solid black;
+    border-radius: 20px;
     margin: auto;
     margin-bottom: 2px;
     padding: 10px;
-    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.659);
-    
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.541);
 }
 
 div.content {
     background-color: transparent;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     width: 740px;
     height: 350px;
     position: absolute;
@@ -55,17 +75,44 @@ div.content {
     top: 12%;
     border: 1px solid transparent;
     border-radius: 40px;
-    
+}
 
+div#bri {
+    background-image: url(imagens/brigadeiro2-Ge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+div#bol {
+    background-image: url(imagens/bolo2-Ge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+div#cup {
+    background-image: url(imagens/cupcake2-G.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+div#moss{
+    background-image: url(imagens/pexels-valeria-boltneva-10120687.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 div.imagem { 
-    
-    width: 300px;
-    margin: 15px;
+    max-height: 300px;
+    margin: 20px 0px 15px 15px;
     margin-right: 0px;
-    padding: 10px;
-    padding-right: 0px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    
     
 }
 
@@ -104,13 +151,29 @@ img {
     height: 300px;
 }
 
-div#bol {
-    background-image: url(imagens/bolo2-Ge.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
 
-div#bolo > img, h1, p {
-    
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    img{
+        width: 150px;
+        height: 220px;
+    }
+
+    div.imagem {
+        
+    }
+
+    span {
+        font-size: 0.67em;
+        max-width: 180px ;
+        min-height: 200px;
+    }
+
+    div.content {
+        background-color: #D077D9;
+        left: 6%;
+        max-width: 368px;
+        max-height: 278px;
+        
+    }
+
 }
