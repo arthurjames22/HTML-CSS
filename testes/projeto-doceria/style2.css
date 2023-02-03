@@ -187,10 +187,10 @@ footer {
 }
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
-    div.content {
+    /*div.content {
 
-
-    }
+        
+    }*/
 
     img {
         width: 30vw;
