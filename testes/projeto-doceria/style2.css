@@ -7,7 +7,7 @@
 
 :root {
     --cor0: #D077D9;
-    --cor1: #F08FCF;
+    --cor1: #ecc7e0;
     --cor2: #F89389;
     --cor3: #D97787;
     --cort1: rgb(179, 255, 125) ;
@@ -23,10 +23,7 @@
 
 body {
     background-image: linear-gradient( rgb(248, 138, 98), rgb(62, 32, 22));
-    
-    
-    
-    
+    width: 100vw;
 }
 
 header {
@@ -37,19 +34,26 @@ header {
     box-shadow: 1px 1px 4px 1px black;
     background-attachment: fixed ;
     padding: 10px;
-    width: 98vw;
+    width: 100vw;
     text-align: center;
-    box-shadow: 0px 3px 0px 0px black;
+   
     
 }
 
-header > h1 { 
+div#cab {
+    margin: auto;
+    width: 50vw;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+div#cab > h1 { 
     font-size: 4em;
     font-family: var(--font1);
     color: var(--cor1);
 }
 
-header > p {
+div#cab > p {
     font-size: 3em;
     font-family: var(--font0);
     color: var(--cor2);
@@ -68,8 +72,7 @@ div.container {
 }
 
 div.content {
-   background-color: transparent;
-
+    background-color: transparent;
     backdrop-filter: blur(4px);
     width: 60vw;
     height: 350px;
@@ -130,8 +133,10 @@ span {
    text-align: justify;
    margin: 15px;
    margin-left: 0px;
+   top: -22px;
    padding: 10px;
-   color: white;
+   color: rgb(245, 212, 196);
+   
    
 }
 
@@ -144,6 +149,10 @@ span > h1 {
 span > p {
     font-size: 1.45em;
     font-family: var(--font0);
+    background-color: #9e72a37c;
+    border: 3px solid #D97787;
+    border-radius: 15px;
+    margin: 3px;
 }
 
 .imagem, span {
